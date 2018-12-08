@@ -16,8 +16,8 @@ $router->get('/', function () use ($router) {
 });
 
 //product routes
-$app->get('products', 'ProductsController@index');
-$app->get('products/{id}', 'ProductsController@show');
-$app->put('products/{id}', 'ProductsController@update');
-$app->post('products', 'ProductsController@store');
-$app->delete('products/{id}', 'ProductsController@destroy');
+$router->get('products', 'ProductsController@index');
+$router->get('products/{id}', 'ProductsController@show');
+$router->put('products/{id}', 'ProductsController@update');
+$router->post('products', 'ProductsController@store');
+$router->delete('products/{id}', 'ProductsController@destroy');
